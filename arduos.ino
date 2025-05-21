@@ -1,6 +1,7 @@
 int bootstate = 0;
 int plot1 = 0;
 int plot2 = 500;
+int doublenumber = 0;
 void setup() {
 
   Serial.begin(9600);
@@ -40,9 +41,14 @@ void loop() {
       }
       break;
 
-    case 3:
-      Serial.println("3");
+        case 3:
+      while (Serial.available() == 0) {
+      }
+      doublenumber = Serial.parseInt();
+      delay(1000);
+      Serial.println(doublenumber * 2);
       break;
+
     
     case 4:
       Serial.println("4");
