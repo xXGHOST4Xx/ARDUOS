@@ -1,11 +1,10 @@
-
-int file1 = 0;  
-int file1state = 0;
+bootstate = 0
 
 void setup() {
 
   Serial.begin(9600);
   pinMode(LED_BUILTIN, OUTPUT);
+  bootstate = 1
 }
 
 void loop() {
