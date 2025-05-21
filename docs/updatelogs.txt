@@ -1,1 +1,2 @@
 0.7 - First Public Release
+0.7.1 - Removed Some Variables And Added A Bootstate For Later Safeboot
