@@ -1,10 +1,11 @@
-bootstate = 0
-
+int bootstate = 0;
+int plot1 = 0;
+int plot2 = 500;
 void setup() {
 
   Serial.begin(9600);
   pinMode(LED_BUILTIN, OUTPUT);
-  bootstate = 1
+  bootstate = 1;
 }
 
 void loop() {
@@ -17,15 +18,10 @@ void loop() {
  
   int menuChoice = Serial.parseInt();  
 
-//  Serial.print("DEBUG: You entered: ");
-//  Serial.println(menuChoice);
-
- 
   switch (menuChoice) {
     case 1:
       Serial.println("Running 10X LED flash");
       
-  
       for (int i = 0; i < 10; i++) {
         digitalWrite(LED_BUILTIN, HIGH);  
         delay(500);  
@@ -35,7 +31,13 @@ void loop() {
       break;
       
     case 2:
-      Serial.println("2");
+      for (int i = 0; i < 10; i++) {
+        Serial.print("Plotting 10 Spikes");
+        Serial.println(plot1);
+        delay(250);
+        Serial.println(plot2);
+        delay(250);
+      }
       break;
 
     case 3:
@@ -45,10 +47,6 @@ void loop() {
     case 4:
       Serial.println("4");
       break;
-
-    //default:
-      //Serial.println("ERROR");
-      //break;
   }
   
   delay(50); 
