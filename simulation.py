@@ -1,4 +1,4 @@
-# Simulate Version 0.7 Of ARDUOS
+# Simulate Cut Down Version 0.7 Of ARDUOS
 while True:
     print("Which option?")
     choice = input()
