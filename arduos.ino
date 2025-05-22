@@ -41,14 +41,19 @@ void loop() {
         delay(250);
       }
       break;
-
-        case 3:
+    
+    case 3:
+      Serial.setTimeout(100000000000000000000000000);  
+      Serial.println("Enter a number:");
       while (Serial.available() == 0) {
+        delay(10);
       }
       doublenumber = Serial.parseInt();
-      delay(1000);
       Serial.println(doublenumber * 2);
       break;
+
+
+
 
     
     case 4:
