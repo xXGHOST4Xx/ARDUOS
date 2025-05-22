@@ -1,10 +1,11 @@
+#include "baudsconf.h";
 int bootstate = 0;
 int plot1 = 0;
 int plot2 = 500;
 int doublenumber = 0;
 void setup() {
 
-  Serial.begin(9600);
+  Serial.begin(bauds);
   pinMode(LED_BUILTIN, OUTPUT);
   bootstate = 1;
 }
