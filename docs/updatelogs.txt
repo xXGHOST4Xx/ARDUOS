@@ -2,3 +2,4 @@
 0.7.1 - Removed Some Variables And Added A Bootstate For Later Safeboot
 0.8 - Added Spike Plotter 0-500
 0.9 - Added Number Doubler And Bug Fixes
+1.0 - Added Baud Config File And Bug Fixes
