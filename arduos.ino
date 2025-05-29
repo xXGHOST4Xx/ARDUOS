@@ -34,7 +34,7 @@ void loop() {
       
     case 2:
       for (int i = 0; i < 10; i++) {
-        Serial.print("Plotting 10 Spikes");
+        Serial.print("Plotting 10 Spikes\n");
         Serial.println(plot1);
         delay(250);
         Serial.println(plot2);
