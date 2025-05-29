@@ -4,3 +4,4 @@
 0.9 - Added Number Doubler And Bug Fixes
 1.0 - Added Baud Config File And Bug Fixes
 1.0.1 - Refined Version 1.0 And Bug Fixes
+1.0.2 - Bug Fixes
